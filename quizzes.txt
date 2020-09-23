@@ -1,7 +1,7 @@
 Quizzes from Red Hat OpenShift Container Platform 3 Implementation Course
 
 -------------------------------------------------------------------------
-Quiz 3:
+Quiz 2: OpenShift Architecture Overview
 
 Question 1
 
@@ -128,6 +128,159 @@ A route object consists of a host name, a route name, a service selector, and op
 *TRUE
 FALSE 
 
+-------------------------------------------------------------------------
+
+Quiz 3: Core Concepts
+
+
+Question 1
+
+Which of the following is NOT true about containers?
+
+They are lightweight mechanisms for isolating running processes
+Many application instances can run in containers on a single host
+*They save data from execution to execution
+They have no visibility into other processes, files, network, etc.
+
+Question 2
+
+A running instance of an image is referred to as a container.
+
+*TRUE
+FALSE
+
+Question 3
+
+Which of the following is NOT true about images?
+
+An image is a binary that includes all the requirements for running a single container
+An image includes metadata describing its needs and capabilities
+*An image contains an operating system by default
+Images are tagged to indicate different versions of the same image
+
+Question 4
+
+An image is built by Docker or OpenShift builders and contains multiple versions specified by a hash and optionally, a user-defined tag.
+
+*TRUE
+FALSE
+
+Question 5
+
+Each pod is allocated its own internal IP address and owns an entire port range, and containers within pods can share local storage and networking.
+
+*TRUE
+FALSE
+
+Question 6
+
+A user cannot change a pod definition while the pod is running. The pod must be restarted to pick up the pod definition changes.
+
+*TRUE
+FALSE
+
+Question 7
+
+A pod can be defined as which of the following?
+
+One or more containers deployed together on a host
+An internal load balancer that proxies connections
+*A mechanism that determines placement of new objects onto nodes within a cluster
+The means most often used to transform source code into a runnable image
+
+Question 8
+
+A service is commonly known as which of the following?
+
+One or more containers deployed together on a host
+An internal load balancer that proxies connections
+*A mechanism that determines placement of new objects onto nodes within a cluster
+The means most often used to transform source code into a runnable image
+
+Question 9
+
+The scheduler is responsible for which of the following?
+
+One or more containers deployed together on a host
+An internal load balancer that proxies connections
+*A mechanism that determines placement of new objects onto nodes within a cluster
+The means most often used to transform source code into a runnable image
+
+Question 10
+
+Which of the following best describes a build?
+
+*The means most often used to transform source code into a runnable image
+One or more containers deployed together on a host
+An internal load balancer that proxies connections
+A mechanism that determines placement of new objects onto nodes within a cluster
+
+Question 11
+
+S2I produces ready-to-run images by injecting user source into a base Docker image (_source_) and assembling a new Docker image that is ready to use with 'docker run'.
+
+*TRUE
+FALSE
+
+Question 12
+
+S2I supports incremental builds that reuse previously downloaded dependencies, previously built artifacts, etc.
+
+*TRUE
+FALSE
+
+Question 13
+
+Which of the following best describes an image stream?
+
+It is similar to a Docker image repository; it contains images identified by tags and presents a single virtual view of related images
+It ensures that the specified number of pod replicas are running at all times, and if pods exit or are deleted, it instantiates more
+It creates a new controller that lets it start up pods
+*provides external host name mapping and load balancing to applications over protocols that pass distinguishing information directly
+
+Question 14
+
+Which of the following best describes a replication controller?
+
+It is similar to a Docker image repository; it contains images identified by tags and presents a single virtual view of related images
+*It ensures that the specified number of pod replicas are running at all times, and if pods exit or are deleted, it instantiates more
+It creates a new controller that lets it start up pods
+It provides external host name mapping and load balancing to applications over protocols that pass distinguishing information directly
+
+Question 15
+
+Which of the following best describes a deployment configuration?
+
+It is similar to a Docker image repository; it contains images identified by tags and presents a single virtual view of related images
+It ensures that the specified number of pod replicas are running at all times, and if pods exit or are deleted, it instantiates more
+*It creates a new controller that lets it start up pods
+It provides external host name mapping and load balancing to applications over protocols that pass distinguishing information directly
+
+Question 16
+
+Which of the following best describes a router?
+
+It is similar to a Docker image repository; it contains images identified by tags and presents a single virtual view of related images
+It ensures that the specified number of pod replicas are running at all times, and if pods exit or are deleted, it instantiates more
+It creates a new controller that lets it start up pods
+*It provides external host name mapping and load balancing to applications over protocols that pass distinguishing information directly
+
+Question 17
+
+Path-based routes specify a path component that can be compared against a URL so that you can serve multiple routes, each with a different path, using the same host name.
+
+*TRUE
+FALSE
+
+Question 18
+
+A "re-encryption" route is a variation on edge termination in which the router terminates TLS with a certificate, then re-encrypts its connection to the endpoint, which may have a different certificate.
+
+*TRUE
+FALSE 
+
+-------------------------------------------------------------------------
+Quiz 4: High Availability
 
 
 

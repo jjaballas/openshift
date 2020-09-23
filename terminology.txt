@@ -25,3 +25,59 @@ Terminology
 
 - Service -- Defines logical set of pods and policy for accessing them
 
+
+***************************************************************************
+
+Concept/Object              DescriptionConcept/Object
+	
+Containers and images       Building blocks for deploying applications
+
+Pods and services           Let containers communicate with each other
+                            and with proxy connections
+
+Projects and users          Provide means for communities to organize
+                            and manage content together
+
+Builds and image streams    Let you build working images and react to new
+                            images
+
+Deployments                 Add support for software development and
+                            deployment life cycle
+
+Routes                      Announce service to the world
+                            
+Templates                   Let you create many objects at once based on
+                            parameters
+***************************************************************************
+
+What is Docker?
+
+  -> packaging technology for containers
+
+What is a Container?
+
+  -> a running image of a Docker image
+	
+What is a Pod?
+
+  -> one or more containers deployed together on host
+  -> smallest compute unit you can define, deploy, manage
+
+
+What is a Service?
+
+  -> serves as internal load balancer
+  -> identifies set of replicated pods
+  -> proxies connections it receives to identified pods
+
+What are labels?
+
+  -> used to organize, group, choose API objects
+
+What is the Scheduler?
+
+  -> Determines placement of new pods onto nodes within OpenShift cluster
+  -> Reads pod data, tries to find node that is good fit
+  -> Does not modify pod, merely creates binding that ties pod to node
+
+
