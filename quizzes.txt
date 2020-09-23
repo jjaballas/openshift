@@ -394,5 +394,125 @@ The OpenShift Ansible deployer can deploy a load balancer for the master API.
 *TRUE
 FALSE 
 -------------------------------------------------------------------------
+Quiz 5: Application Management
+
+
+Question 1
+
+The 'oc' command line tool keeps its configuration information in $HOME/.kube/config.
+
+*TRUE
+FALSE
+
+Question 2
+
+When executing 'oc login', which of the following endpoints does the 'oc' CLI tool connect to?
+
+*OpenShift master API
+etcd datastore
+OpenShift node
+OpenShift scheduler
+
+Question 3
+
+Projects contain multiple objects that make up a logical application.
+
+*TRUE
+FALSE
+
+Question 4
+
+After successfully executing 'oc project < projectname>' all subsequent commands assume a scope of that project, unless the further commands are called with the '-n < different project>' command line arugument.
+
+*TRUE
+FALSE
+
+Question 5
+
+'oc new-app' creates applications by specifying which of the following application sources?
+
+The source code
+An image
+A template
+*Any of the above
+
+Question 6
+
+When using 'oc new-app' with source code, which of the following objects are constructed automatically?
+
+*Build configuration
+Deployment configuration
+Service
+All of the above
+
+Question 7
+
+You can write S2I (Source-to-Image) scripts that re-use artifacts stored in a previous version of the application image.
+
+*TRUE
+FALSE
+
+Question 8
+
+OpenShift S2I scripts can detect many popular languages and automatically include runtimes for them in the images it builds.
+
+*TRUE
+FALSE
+
+Question 9
+
+Using 'oc new-app' with templates is an easy way to build and deploy complex, multi-pod applications.
+
+*TRUE
+FALSE
+
+Question 10
+
+You can use '--search' with 'oc new-app' to find application sources that may already be in your system.
+
+*TRUE
+FALSE
+
+Question 11
+
+A deployment configuration provides which of the following?
+
+Configuration template
+Triggers for automated deployments
+Deployment strategies
+*All of the above
+
+Question 12
+
+'oc rollout latest dc/< name>' starts a new deployment unless there is a deployment for that dc already in progress.
+
+*TRUE
+FALSE
+
+Question 13
+
+You can view the streaming logs of a deployment with which of the following commands?
+
+oc logs dc/< name>
+oc get logs dc/< name>
+oc stream logs dc/< name>
+*oc logs -f dc/< name>
+
+Question 14
+
+Routes expose services for access by external clients at a host name.
+
+*TRUE
+FALSE
+
+Question 15
+
+Routes bypass the service networks and access pods directly.
+
+*TRUE
+FALSE
+
+-------------------------------------------------------------------------
+
 
 
