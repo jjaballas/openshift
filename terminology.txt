@@ -12,6 +12,16 @@ Terminology
 
    - node daemon and other software run on node
 
+   - Master Host -- instance of RHEL or Red Hat Atomic Host
+
+       - Primary functions:
+
+            - Orchestrate all activities on nodes
+            - Know and maintain state within OpenShift environment
+
+
 - Pod -- one or more containers deployed together on one host
 
+
+- Service -- Defines logical set of pods and policy for accessing them
 
