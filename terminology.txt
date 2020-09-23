@@ -1,0 +1,17 @@
+Terminology
+
+- Red Hat OpenShift Container Platform (RHOCP) 3.11 is Platform-as-a-Service (PaaS)
+
+- nodes vs. masters
+
+   - nodes are instances of RHEL 7 or Red Hat Atomic Host with Red Hat OpenShift Container Platform (RHOCP) installed
+
+   - Nodes are where end-user applications run
+
+   - Nodes are orchestrated by masters
+
+   - node daemon and other software run on node
+
+- Pod -- one or more containers deployed together on one host
+
+
