@@ -71,9 +71,9 @@ Question 9
 
 What is the purpose of the registry?
 
-*Distributed key-value datastore for cluster state, RBAC rules, application environment information, etc.
+Distributed key-value datastore for cluster state, RBAC rules, application environment information, etc.
 Responsible for determining pod placement.
-Stores and manages Docker/container images
+*Stores and manages Docker/container images
 Allows cluster administrators to integrate multiple platforms using a single API specification
 
 Question 10
