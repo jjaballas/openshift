@@ -283,4 +283,116 @@ FALSE
 Quiz 4: High Availability
 
 
+Question 1
+
+Highly Available installations can be deployed with the Quick Installer.
+
+TRUE
+*FALSE
+
+Question 2
+
+Docker must be installed prior to OpenShift deployment.
+
+*TRUE
+FALSE
+
+Question 3
+
+The master hosts have routers and image registries running on them.
+
+TRUE
+*FALSE
+
+Question 4
+
+Labels and selectors can be used to ensure apps and components are deployed to the proper node.
+
+*TRUE
+FALSE
+
+Question 5
+
+The default location of the Ansible inventory file is /etc/ansible/hosts.
+
+*TRUE
+FALSE
+
+Question 6
+
+Which section is part of the Ansible inventory file?
+
+[OSEv3:vars]
+[OSEv3:children]
+[nodes]
+*All of the above
+
+Question 7
+
+The variables in [OSEv3:vars] section of the Ansible inventory file indicate what should be installed, and where.
+
+*TRUE
+FALSE
+
+Question 8
+
+Which of the following Ansible inventory parameters ensure that routers and registries are deployed to nodes labeled 'node-role.kubernetes.io/infra=true'?
+
+openshift_registry_selector='node-role.kubernetes.io/infra=true'
+openshift_router_selector='node-role.kubernetes.io/infra=true'
+*Both of the above
+Neither of the above
+
+Question 9
+
+The 'openshift_master_default_subdomain' Ansible inventory parameter controls which of the following?
+
+Host name of master API servers
+*Subdomain where applications are exposed as routes, creating further subdomains
+Where container images are stored
+Private address of nodes
+
+Question 10
+
+Ansible host variables are specific to the particular host they are deployed on, and are set in the [master], [node], etc., sections of the Ansible Inventory file.
+
+*TRUE
+FALSE
+
+Question 11
+
+A host is associated with a node group during installation by adding a host variable like this: node1.example.com openshift_node_group_name="node-config-compute-highmem".
+
+*TRUE
+FALSE
+
+Question 12
+
+Various types of remote storage can be set up at installation time.
+
+*TRUE
+FALSE
+
+Question 13
+
+Additional persistent storage needs to be set up after OpenShift installation.
+
+*TRUE
+FALSE
+
+Question 14
+
+If the OpenShift master API goes down, applications deployed on OpenShift continue to function as they were deployed.
+
+*TRUE
+FALSE
+
+Question 15
+
+The OpenShift Ansible deployer can deploy a load balancer for the master API.
+
+*TRUE
+FALSE 
+-------------------------------------------------------------------------
+
 
