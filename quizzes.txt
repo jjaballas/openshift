@@ -513,6 +513,261 @@ Routes bypass the service networks and access pods directly.
 FALSE
 
 -------------------------------------------------------------------------
+Quiz 6: Post Installation Procedures
 
+Question 1
+
+Which of the following is a method to authenticate to OpenShift?
+
+OAuth
+x509v3 certificates
+*Both of the above
+Neither of the above
+
+Question 2
+
+OpenShift does not store passwords in its own datastore, but instead uses external identity providers like htpasswd or LDAP.
+
+*TRUE
+FALSE
+
+Question 3
+
+Which of the following is NOT an identity provider?
+
+DenyAll
+*AllowOAuth
+LDAP
+HTPasswd
+
+Question 4
+
+"Authorization" determines what a user can do on a system.
+
+FALSE
+*TRUE
+
+Question 5
+
+Which of the following is NOT a user type in OpenShift?
+
+Regular user
+System user
+Service accounts
+*Authorized user
+
+Question 6
+
+Cluster-wide rules are checked AFTER project-local rules when determining authorization.
+
+*FALSE
+TRUE
+
+Question 7
+
+Which of the following is NOT part of an authorization policy?
+
+Rules
+Roles
+*Pods
+Bindings
+
+Question 8
+
+In OpenShift Container Platform authorizations default to DENY unless a policy rule specifically allows an action.
+
+FALSE
+*TRUE
+
+Question 9
+
+Service accounts make API calls on behalf of system components that act without regular user input.
+
+*TRUE
+FALSE
+
+Question 10
+
+A service account's name consists of which of the following?
+
+system:serviceaccount:< node>:< user>
+system:< project>:< component>:< name>
+*system:serviceaccount:< project>:< name>
+system:serviceaccount:< role>:< rule>
+
+Question 11
+
+Security Context Constraints (SCCs) control what special authorizations pods can have.
+
+*TRUE
+FALSE
+
+Question 12
+
+Which of the following is NOT an SCC feature?
+
+Allow container to execute as any User ID
+Set the SELinux context of a container
+Allow the use of host directories
+*Set maximum number of containers on a host
+
+Question 13
+
+Which of the following is not a feature of 'oc policy'?
+
+*audit
+can-i
+who-can
+can-i --list
+
+Question 14
+
+If a user has the 'Impersonate-User' rule, it can run an action as another user by adding '--as=< username>' to any command.
+
+FALSE
+*TRUE
+
+Question 15
+
+To see the roles bound to various users and groups, run 'oc describe rolebinding.rbac < user>'.
+
+FALSE
+*TRUE
+
+-------------------------------------------------------------------------
+Quiz 7: Resources and Quotas
+
+Question 1
+
+Which of the following is NOT an object or resource in RHOCP?
+
+Pods
+Replication controllers
+*oc
+CPU
+
+Question 2
+
+Kubernetes "Namespaces" are mostly the same as OpenShift "Projects".
+
+FALSE
+*TRUE
+
+Question 3
+
+Requests and limits are set on pods.
+
+*TRUE
+FALSE
+
+Question 4
+
+Which of the following resources is NOT managed by requests and limits?
+
+CPU
+MEMORY
+*DISK
+None of the above
+
+Question 5
+
+Limit ranges are set by the administrator on a per project basis.
+
+*TRUE
+FALSE
+
+Question 6
+
+How many pods can be launched on a single 128GB RAM node when there is a LimitRange max memory of 60GB and all pods request 10GB RAM each?
+
+128
+126
+*12
+6
+
+Question 7
+
+Which of the following is NOT a feature of resource quotas?
+
+Limits the number of objects in a project
+Limits the amount of compute/memory in a project
+*Limits the time-outs of inactive users
+Limits the number of Replication Controllers
+
+Question 8
+
+Resource quotas can be scoped to affect only certain types of specific objects.
+
+*TRUE
+FALSE
+
+Question 9
+
+ClusterResourceQuotas limit the aggregate of resources across indicated projects.
+
+*TRUE
+FALSE
+
+Question 10
+
+Which of the following is NOT a supported PersistentVolume source?
+
+GlusterFS
+NFS
+*S3
+EBS
+
+Question 11
+
+PersistentVolumeClaims bind PersistentVolumes to projects.
+
+*TRUE
+FALSE
+
+Question 12
+
+Which of the following is NOT defined in a PersistentVolumeClaim?
+
+Access mode
+*Storage source (for example NFS, etc.)
+Volume size
+Storage class name
+
+Question 13
+
+Pods use PersistentVolumeClaims to claim and mount PersistentVolumes.
+
+*TRUE
+FALSE
+
+Question 14
+
+A PersistentVolumeClaim will bind to a PersistentVolume that are larger than it, but will not actively govern the amount of storage space usable by the Pod.
+
+*TRUE
+FALSE
+
+Question 15
+
+Projects define the scope for all but which of the following objects?
+
+Pods
+*Nodes
+Services
+Service Accounts
+
+Question 16
+
+Only one pod at a time can mount a persistent volume with ReadWriteOnce access mode.
+
+*TRUE
+FALSE
+
+Question 17
+
+Horizontal pod autoscalers can scale down as well as up.
+
+*TRUE
+FALSE
 
 
